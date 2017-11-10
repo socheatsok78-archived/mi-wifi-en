@@ -5,5 +5,8 @@
   "main": "index.js",
   "repository": "git@github.com:socheatsok78/mi-wifi-en.git",
   "author": "Socheat <socheatsok78@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "laravel-mix": "^1.6.1"
+  }
 }
