@@ -1,0 +1,9 @@
+{
+  "name": "mi-wifi-en",
+  "version": "0.0.1",
+  "description": "Translate Xiaomi Router dashboard from Chinese to English",
+  "main": "index.js",
+  "repository": "git@github.com:socheatsok78/mi-wifi-en.git",
+  "author": "Socheat <socheatsok78@gmail.com>",
+  "license": "MIT"
+}
