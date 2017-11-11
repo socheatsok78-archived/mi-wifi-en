@@ -6,7 +6,15 @@
   "repository": "git@github.com:socheatsok78/mi-wifi-en.git",
   "author": "Socheat <socheatsok78@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "node_modules/.bin/cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "node_modules/.bin/cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "node_modules/.bin/cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "node_modules/.bin/cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
   "devDependencies": {
+    "cross-env": "^5.1.1",
     "laravel-mix": "^1.6.1"
   }
 }
