@@ -12,7 +12,11 @@
 
   "content_scripts": [
     {
-      "matches": ["http://*/*", "https://*/*"],
+      "matches": [
+        "http://miwifi.com/cgi-bin/luci/web/*",
+        "http://*/cgi-bin/luci/web/*",
+        "https://*/cgi-bin/luci/web/*"
+      ],
       "js": ["dist/js/popup.js"]
     }
   ],

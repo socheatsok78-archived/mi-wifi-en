@@ -8,7 +8,12 @@ const PUBLIC_PATH = 'dist';
 mix.setPublicPath(PUBLIC_PATH);
 
 /**
- * Compile Asset
+ * Popup Asset
  */
 mix.sass('src/sass/popup.scss', 'css');
 mix.js('src/script/popup.js', 'js');
+
+/**
+ * Vendor Assets
+ */
+mix.sass('src/sass/vendor.scss', 'css');
