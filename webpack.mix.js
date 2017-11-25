@@ -15,3 +15,17 @@ mix.copy('src/manifest.json', 'dist/')
  * Copying Extension Pages
  */
 mix.copy('src/popup.html', 'dist/');
+
+/**
+ * Laravel Mix Configurations
+ */
+mix.webpackConfig({
+  resolve: {
+    alias: {
+      /**
+       * SDK
+       */
+      'SDK': path.resolve(__dirname, 'src/sdk')
+    }
+  }
+});
