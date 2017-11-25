@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+mix.disableNotifications();
 
 /**
  * Compiling scripts
@@ -25,7 +26,7 @@ mix.webpackConfig({
       /**
        * SDK
        */
-      'SDK': path.resolve(__dirname, 'src/sdk')
+      'SDK': path.resolve(__dirname, 'src/sdk'),
     }
   }
 });
