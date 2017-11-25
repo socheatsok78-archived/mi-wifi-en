@@ -1,0 +1,3 @@
+[submodule "packager/crxmake"]
+	path = packager/crxmake
+	url = https://github.com/Constellation/crxmake
