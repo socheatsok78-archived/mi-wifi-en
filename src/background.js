@@ -1,1 +1,4 @@
-console.log('Hey');
+/**
+ * Registering Translatioin Services
+ */
+require('./services/translation');
