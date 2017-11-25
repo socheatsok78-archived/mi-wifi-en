@@ -1,0 +1,10 @@
+{
+  "name": "xiaomi-router",
+  "version": "0.0.1",
+  "description": "Mi Wifi English Interface",
+  "main": "server.js",
+  "repository": "git@github.com:socheatsok78/mi-wifi-en.git",
+  "author": "Socheat <socheatsok78@gmail.com>",
+  "license": "MIT",
+  "private": true
+}

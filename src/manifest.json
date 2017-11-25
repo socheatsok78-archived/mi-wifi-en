@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Xiaomi Router - English",
+  "description": "Translate Xiaomi Router dashboard from Chinese to English",
+  "version": "0.0.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://miwifi.com/*",
+        "http://miwifi.com/cgi-bin/luci/web/*",
+        "http://*/cgi-bin/luci/web/*",
+        "https://*/cgi-bin/luci/web/*",
+        "https://d.miwifi.com/d2r/?url=*"
+      ],
+      "js": ["dist/js/popup.js"]
+    }
+  ],
+  
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
