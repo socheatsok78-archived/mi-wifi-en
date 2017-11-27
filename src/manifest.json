@@ -6,6 +6,8 @@
   "description": "Translate Xiaomi Router dashboard from Chinese to English",
   "version": "0.0.1",
 
+  "options_page": "popup.html?options=true",
+
   "browser_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html"
@@ -31,5 +33,9 @@
     "storage",
     "http://*/*",
     "https://*/*"
-  ]
+  ],
+
+  "icons": {
+    "128": "icon.png"
+  }
 }
