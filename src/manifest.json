@@ -2,6 +2,7 @@
   "manifest_version": 2,
 
   "name": "Xiaomi Router - English",
+  "short_name": "MiWifi",
   "description": "Translate Xiaomi Router dashboard from Chinese to English",
   "version": "0.0.1",
 
@@ -19,12 +20,16 @@
         "https://*/cgi-bin/luci/web/*",
         "https://d.miwifi.com/d2r/*"
       ],
-      "js": ["background.js"]
+      "js": ["background.js"],
+      "run_at": "document_end"
     }
   ],
   
   "permissions": [
+    "webRequest",
     "activeTab",
-    "storage"
+    "storage",
+    "http://*/*",
+    "https://*/*"
   ]
 }
