@@ -1,0 +1,14 @@
+os: linux
+dist: trusty
+language: node_js
+node_js: lts/*
+
+before_install: 
+  - "npm config set spin false"
+
+install: 
+  - npm install
+
+script:
+  - npm run prod
+  - npm run build:prod
