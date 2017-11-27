@@ -1,7 +1,9 @@
 import $x from 'SDK/xpath';
 import $ from 'jquery';
-import _ from 'lodash';
+import forEach from 'lodash/forEach';
+import replace from 'lodash/replace';
 
+$('title').text('MiWifi Networks');
 $x('//*[@id="hd"]/div/div/h2').text('MiWifi Networks');
 $x('//*[@id="root"]/div[1]/p').text('Internet');
 
@@ -18,7 +20,7 @@ setTimeout(() => {
  */
   $('.rom-ver').show();
 
-  const FirmwareVersionReplace = [
+  const translationNodes = [
     {
       src: '系统版本',
       replace: 'Firmware Version'
@@ -33,8 +35,8 @@ setTimeout(() => {
     },
   ];
 
-  _.forEach(FirmwareVersionReplace, (value, index) => {
-    let replaced = _.replace($('.rom-ver').text(), value.src, value.replace);
+  forEach(translationNodes, (value, index) => {
+    let replaced = replace($('.rom-ver').text(), value.src, value.replace);
     $('.rom-ver').text(replaced);
   });
 
