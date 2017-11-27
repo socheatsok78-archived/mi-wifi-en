@@ -5,7 +5,7 @@ language: node_js
 before_install: 
   - rvm install 2.2.2
   - gem install rubyzip
-  - nvm use lts
+  - nvm use lts/*
   - npm config set spin false
 
 install: 
