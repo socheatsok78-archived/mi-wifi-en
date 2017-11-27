@@ -5,6 +5,7 @@ node_js: lts/*
 
 before_install: 
   - rvm install 2.2.2
+  - gem install rubyzip
   - npm config set spin false
 
 install: 
