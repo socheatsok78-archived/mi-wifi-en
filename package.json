@@ -17,6 +17,7 @@
     "build:prod": "ruby packager/crxmake/bin/crxmake --pack-extension ./dist --extension-output ./build/miwifi-prod.crx --pack-extension-key ./cert/key.pem"
   },
   "devDependencies": {
+    "bumped": "^0.10.7",
     "cross-env": "^5.1.1",
     "html-webpack-plugin": "^2.30.1",
     "laravel-mix": "^1.6.1"
