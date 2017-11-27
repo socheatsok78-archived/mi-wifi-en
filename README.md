@@ -1,6 +1,7 @@
 # MiWifi
 
 [![Build Status](https://travis-ci.org/socheatsok78/mi-wifi-en.svg?branch=master)](https://travis-ci.org/socheatsok78/mi-wifi-en)
+---
 
 ---
 
