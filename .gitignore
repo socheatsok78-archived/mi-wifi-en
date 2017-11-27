@@ -68,4 +68,3 @@ typings/
 *.pem
 *.lock
 dist/
-build/
