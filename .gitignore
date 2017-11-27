@@ -67,4 +67,5 @@ typings/
 # Custom Ignore
 *.pem
 *.lock
+mix-manifest.json
 dist/
