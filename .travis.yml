@@ -1,12 +1,11 @@
 os: linux
 dist: trusty
 language: node_js
+node_js: 6.11.3
 
 before_install: 
   - rvm install 2.2.2
   - gem install rubyzip
-  - nvm install lts
-  - nvm use lts/*
   - npm config set spin false
   - openssl aes-256-cbc -K $encrypted_c514960f47e1_key -iv $encrypted_c514960f47e1_iv -in privkey.pem.enc -out key.pem -d
 
