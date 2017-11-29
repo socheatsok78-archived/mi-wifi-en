@@ -1,8 +1,10 @@
 /**
- * Registering Translatioin Services
+ * Trigger background.js
  */
-require('./services/translation');
-
 window.addEventListener('load', () => {
-  
+  /** 
+   * Inject Font families 
+   */
+  require('Services/font');
+
 });
