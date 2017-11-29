@@ -4,7 +4,8 @@ mix.disableNotifications();
 /**
  * Compiling scripts
  */
-mix.js('src/background.js', 'dist/');
+mix.sass('src/scss/vendor.scss', 'dist/css')
+   .js('src/background.js', 'dist/');
 
 /**
  * Copying Manifest.json
@@ -15,7 +16,8 @@ mix.copy('src/manifest.json', 'dist/')
 /**
  * Copying Extension Pages
  */
-mix.copy('src/popup.html', 'dist/');
+mix.copy('src/popup.html', 'dist/')
+   .js('src/popup.js', 'dist/js');
 
 /**
  * Laravel Mix Configurations
