@@ -26,6 +26,21 @@ mix.webpackConfig({
       /**
        * SDK
        */
+      'Lang': path.resolve(__dirname, 'src/lang'),
+
+      /**
+       * SDK
+       */
+      'Services': path.resolve(__dirname, 'src/services'),
+
+      /**
+       * SDK
+       */
+      'Translations': path.resolve(__dirname, 'src/translations'),
+
+      /**
+       * SDK
+       */
       'SDK': path.resolve(__dirname, 'src/sdk'),
     }
   }

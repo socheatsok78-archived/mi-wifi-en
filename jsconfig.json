@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "Lang/*": [
+        "./src/lang/*",
+        "./src/lang/**/*"
+      ],
+      "Services/*": [
+        "./src/services/*"
+      ],
+      "Translations/*": [
+        "./src/translations/*"
+      ],
+      "SDK/*": [
+        "./src/sdk/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
