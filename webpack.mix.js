@@ -17,7 +17,8 @@ mix.copy('src/manifest.json', 'dist/')
  * Copying Extension Pages
  */
 mix.copy('src/popup.html', 'dist/')
-   .js('src/popup.js', 'dist/js');
+   .js('src/popup.js', 'dist/js')
+   .copyDirectory('src/images', 'dist/images');
 
 /**
  * Laravel Mix Configurations
