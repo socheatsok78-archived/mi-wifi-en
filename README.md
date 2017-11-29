@@ -6,6 +6,9 @@
 
 > Currently we don't have any build/release for you guys yet.
 
+## Screenshot
+![MiWifi](screens/Screenshot from 2017-11-29 15-16-54.png)
+
 ## Build Help
 
 ### Requirement
