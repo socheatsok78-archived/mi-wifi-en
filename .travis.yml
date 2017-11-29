@@ -3,13 +3,14 @@ dist: trusty
 language: node_js
 node_js: 6.11.3
 before_install:
-- openssl aes-256-cbc -K $encrypted_c514960f47e1_key -iv $encrypted_c514960f47e1_iv
-  -in cert/privkey.pem.enc -out cert/key.pem -d
-- rvm install 2.2.2
-- gem install rubyzip
-- npm config set spin false
+  - openssl aes-256-cbc -K $encrypted_c514960f47e1_key -iv $encrypted_c514960f47e1_iv
+    -in cert/privkey.pem.enc -out cert/key.pem -d
+  - rvm install 2.2.2
+  - gem install rubyzip
+  - npm config set spin false
 install:
-- npm install
+  - npm install
 script:
-- npm run prod
-- npm run build:prod
+  - npm run lint
+  - npm run prod
+  - npm run build:prod
