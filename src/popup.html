@@ -15,24 +15,24 @@
 </head>
 <body>
 
-  <div class="uk-child-width-1-2@s uk-light" uk-grid>
-    <div>
-      <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="height: 100px; background-image: url(images/cover.jpg);">
-        <img src="images/logo.png" alt="">
+  <div id="app">
+    <div class="uk-child-width-1-2@s uk-light" uk-grid>
+      <div>
+        <div class="uk-background-cover uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle" style="height: 100px; background-image: url(images/cover.jpg);">
+          <img src="images/logo.png" alt="">
+        </div>
       </div>
+    </div>
+    
+    <div class="uk-alert-warning uk-margin-remove" uk-alert>
+      <a class="uk-alert-close" uk-close></a>
+      <p>This extension is currently in development.</p>
+    </div>
+    
+    <div id="dropZone" class="uk-placeholder uk-align-center uk-margin-remove">
+      Paste link to download to your router.
     </div>
   </div>
 
-  <div class="uk-alert-warning uk-margin-remove" uk-alert>
-    <a class="uk-alert-close" uk-close></a>
-    <p>This extension is currently in development.</p>
-  </div>
-  
-  <div class="uk-placeholder uk-align-center uk-margin-remove">
-    Drag & Drop
-    <br>
-    Paste link to download to your router.
-  </div>
-  
 </body>
 </html>
