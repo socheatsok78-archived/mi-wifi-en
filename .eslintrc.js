@@ -6,11 +6,14 @@ module.exports = {
     "commonjs": true,
     "jquery": true,
   },
-  "globals": {},
+  "globals": {
+    "chrome": true
+  },
   "plugins": [],
   "rules": {
     "no-console": "off",
     "global-require": "off",
+    "import/extensions": "off",
     "import/no-unresolved": "off",
     "import/no-extraneous-dependencies": "off"
   }
