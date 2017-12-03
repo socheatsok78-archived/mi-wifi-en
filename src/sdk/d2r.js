@@ -1,4 +1,4 @@
-import Base64 from './base64';
+import { Base64 } from 'js-base64';
 
 /**
  * File Download Protocol for Mi Wifi
