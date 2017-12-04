@@ -1,3 +1,4 @@
 {
-  "travis.repository": "mi-wifi-en"
+  "travis.repository": "mi-wifi-en",
+  "eslint.enable": false
 }
