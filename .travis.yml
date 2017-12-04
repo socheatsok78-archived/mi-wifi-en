@@ -20,8 +20,8 @@ before_deploy:
 - git config --local user.email "socheatsok78@gmail.com"
 # Check if run in cron, set daily build instead
 - if ["$TRAVIS_EVENT_TYPE" = "cron"]; then
-- git semver patch --prefix=v
-- fi
+  git semver patch --prefix=v
+  fi
 deploy:
   provider: releases
   api_key:
