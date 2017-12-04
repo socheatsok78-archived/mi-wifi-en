@@ -50,6 +50,11 @@ mix.webpackConfig({
        * SDK
        */
       'SDK': path.resolve(__dirname, 'src/sdk'),
+
+      /**
+       * SDK
+       */
+      'JSON': path.resolve(__dirname, 'src/json')
     }
   }
 });
