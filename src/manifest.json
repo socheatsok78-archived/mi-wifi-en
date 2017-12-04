@@ -15,21 +15,26 @@
 
   "content_scripts": [
     {
+      "all_frames": true,
       "matches": [
-        "http://miwifi.com/*",
-        "http://miwifi.com/cgi-bin/luci/web/*",
-        "http://*/cgi-bin/luci/web/*",
-        "https://*/cgi-bin/luci/web/*",
-        "https://d.miwifi.com/d2r/*"
+        "http://*/*",
+        "https://*/*"
       ],
       "js": ["background.js"],
       "run_at": "document_end"
     }
   ],
 
+  "background": {
+    "scripts": [
+      "contextMenu.js"
+    ]
+  },
+
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://www.googletagmanager.com/gtm.js https://www.google-analytics.com/analytics.js; object-src 'self'",
   
   "permissions": [
+    "contextMenus",
     "webRequest",
     "activeTab",
     "storage",
@@ -38,6 +43,7 @@
   ],
 
   "icons": {
+    "16": "icon.png",
     "128": "icon.png"
   }
 }

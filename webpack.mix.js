@@ -21,6 +21,11 @@ mix.copy('src/popup.html', 'dist/')
    .copyDirectory('src/images', 'dist/images');
 
 /**
+ * Context Menu
+ */
+mix.js('src/contextMenu.js', 'dist/');
+
+/**
  * Laravel Mix Configurations
  */
 mix.webpackConfig({
