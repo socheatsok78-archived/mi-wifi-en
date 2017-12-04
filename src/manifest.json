@@ -17,8 +17,11 @@
     {
       "all_frames": true,
       "matches": [
-        "http://*/*",
-        "https://*/*"
+        "http://miwifi.com/*",
+        "http://miwifi.com/cgi-bin/luci/web/*",
+        "http://*/cgi-bin/luci/web/*",
+        "https://*/cgi-bin/luci/web/*",
+        "https://d.miwifi.com/d2r/*"
       ],
       "js": ["background.js"],
       "run_at": "document_end"
