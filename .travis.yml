@@ -25,4 +25,5 @@ deploy:
   file: "build/miwifi-prod.crx"
   skip_cleanup: true
   on:
+    tags: true
     repo: socheatsok78/mi-wifi-en
