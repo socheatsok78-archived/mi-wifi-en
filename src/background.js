@@ -5,5 +5,5 @@ window.addEventListener('load', () => {
   /**
    * Inject Font families
    */
-  require('Services/font');
-});
+  require('Services/font')
+})

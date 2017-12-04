@@ -1,4 +1,4 @@
-import Downloader from 'SDK/d2r';
+import Downloader from 'SDK/d2r'
 
 /**
  * Sending link to router
@@ -6,13 +6,13 @@ import Downloader from 'SDK/d2r';
  * @param {object} tab
  * @returns {void}
  */
-function requestRouterDownload(info, tab) {
-  const url = info.srcUrl || info.linkUrl || info.selectionText;
+function requestRouterDownload (info, tab) {
+  const url = info.srcUrl || info.linkUrl || info.selectionText
   chrome.tabs.create({
-    url: Downloader(url),
-  });
+    url: Downloader(url)
+  })
 
-  console.log('requestRouterDownload: tab', tab);
+  console.log('requestRouterDownload: tab', tab)
 }
 
 /**
@@ -21,5 +21,5 @@ function requestRouterDownload(info, tab) {
 chrome.contextMenus.create({
   title: 'Send to MiWifi',
   contexts: ['selection', 'link', 'image', 'video', 'audio'],
-  onclick: requestRouterDownload,
-});
+  onclick: requestRouterDownload
+})
