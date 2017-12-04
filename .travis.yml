@@ -15,9 +15,13 @@ script:
 - npm run prod
 - npm run build:prod
 before_deploy:
+- export PATH=$PATH:$(pwd)/packager/git-semver/bin
 - git config --local user.name "socheatsok78"
 - git config --local user.email "socheatsok78@gmail.com"
-- git tag "travis-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
+# Check if run in cron, set daily build instead
+- if ["$TRAVIS_EVENT_TYPE" = "cron"]; then
+- git semver patch --prefix=v
+- fi
 deploy:
   provider: releases
   api_key:
@@ -25,5 +29,4 @@ deploy:
   file: "build/miwifi-prod.crx"
   skip_cleanup: true
   on:
-    tags: true
     repo: socheatsok78/mi-wifi-en
