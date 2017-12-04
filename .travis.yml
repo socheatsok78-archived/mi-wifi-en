@@ -18,6 +18,6 @@ deploy:
   provider: releases
   api_key:
     secure: gCpbG4N1Crw6sbYsAWn5A9CNsLEputleTO4tf0bFRLaQKSFqw/0yxKq05+ApOb9MDd1m9wUEqOPh6w/PwBO/gcZehEKfJ3Ol+PaMtQMm9rhJRIs5FYzrvVTJeobShnmITYiIkg/KZrsFNxRiV+EK4riFBxCBsAnZ1wIrzcRjR1OHzV5WgTuQblQSB9SbPr06rspzSSsNijMrW3W+9xpPqm4Vlv0GcR65LNps+3gNzHdGr3cfL4UKykD2YFF4akdP51+Hz8DkfpadtfyPwG/rYlGYTUlrJjNcHLWrzqcVnomMrAt/V93bYRWZdP3LoX3VrAip4sCn74QiMmf22cFE3phQyYeG79gJPA9M1jBLu12MAeg5SUN/MQLRtV48sAXoOKW4d4D6491y4FLXlFeTysRqGBuZWKWd7+5ypGl2MHTUIsQn/rKaNcdn1U3w85+hwdDvMlvLqUuhWidFGVWMTDccCKYxDtmtPpoi/NQjXEhR0HJw69AIxHPZh5W04MWj169y/FwHaslhKasmFAPkQbM8dr3Soz2YTzhavFuwURsVuzwRhEzTe/6hrEszLCW/gf73hHGWUqq/s7IbP8vjU/k3kGaPTjCh+Hibtyw67K/aJFsPqt+nkckXtZREUIbVV7/sUjq77wJKd3QhUQs+eHXnGCRyFcg9ItjTaNc4XKU=
-  file: "./build/miwifi-prod.crx"
+  file: "build/miwifi-prod.crx"
   on:
     repo: socheatsok78/mi-wifi-en
