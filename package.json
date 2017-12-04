@@ -42,11 +42,13 @@
     "vue": "^2.5.8"
   },
   "standard": {
-    "globals": [
-      "chrome"
-    ],
-    "ignore": [
-      "src/sdk"
-    ]
+    "env": {
+      "es6": true,
+      "browser": true,
+      "commonjs": true,
+      "jquery": true
+    },
+    "globals": [ "chrome" ],
+    "ignore": [ "src/sdk" ]
   }
 }
