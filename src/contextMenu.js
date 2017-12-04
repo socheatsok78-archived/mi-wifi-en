@@ -11,6 +11,8 @@ function requestRouterDownload(info, tab) {
   chrome.tabs.create({
     url: Downloader(url),
   });
+
+  console.log('requestRouterDownload: tab', tab);
 }
 
 /**
