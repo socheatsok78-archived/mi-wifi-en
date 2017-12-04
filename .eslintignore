@@ -1,7 +1,0 @@
-# /node_modules/* and /bower_components/* ignored by default
-
-# Ignore Laravel Mix Configuration files
-*.mix.js
-
-# Ignore SDK
-src/sdk/*
