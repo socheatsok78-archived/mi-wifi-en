@@ -6,6 +6,10 @@
 
 > Currently we don't have any build/release for you guys yet.
 
+## Features
+- Send downloadable link to your router
+- Translate your MiWifi Dashboard to English (coming soon!)
+
 ## Screenshot
 ![MiWifi](screens/popup.png)
 
