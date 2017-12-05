@@ -1,17 +1,13 @@
-<div style="text-align: center;">
-  <img src="screens/logo.png" alt="MiWifiLogo">
-  <br>
-  <p>It is suck to not have English as an option!</p>
+<p align="center">
+  <img src="screens/logo.png" alt="MiWifiLogo"><br><br>
   <a href="https://travis-ci.org/socheatsok78/mi-wifi-en">
     <img src="https://travis-ci.org/socheatsok78/mi-wifi-en.svg?branch=master" alt="Build Status">
   </a>
   <a href="https://standardjs.com">
     <img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="JavaScript Style Guide">
   </a>
-  <br>
-</div>
-
-> This extensioin will help you nagivate your MiWifi dashboard in English without dealing with the pain of `Google Translate`.
+</p>
+<p align="center"><b>It is suck to not have English as an option!</b> <br> This extensioin will help you nagivate your MiWifi dashboard in English without dealing with the pain of `Google Translate`.</p>
 
 ## Installation
 
