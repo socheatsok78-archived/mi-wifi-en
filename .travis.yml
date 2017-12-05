@@ -17,7 +17,7 @@ script:
 before_deploy:
 - git config --local user.name "socheatsok78"
 - git config --local user.email "socheatsok78@gmail.com"
-- packager/git-semver/bin/git-semver semver patch --prefix=v
+# - packager/git-semver/bin/git-semver semver patch --prefix=v
 deploy:
   provider: releases
   api_key:
