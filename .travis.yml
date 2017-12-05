@@ -15,10 +15,9 @@ script:
 - npm run prod
 - npm run build:prod
 before_deploy:
-- export PATH=$PATH:$(pwd)/packager/git-semver/bin
 - git config --local user.name "socheatsok78"
 - git config --local user.email "socheatsok78@gmail.com"
-- git semver patch --prefix=v
+- packager/git-semver/bin/git-semver semver patch --prefix=v
 deploy:
   provider: releases
   api_key:
