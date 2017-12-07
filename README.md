@@ -40,7 +40,7 @@ npm run dev
 Then run the following command, this will output the extension in `build/miwifi-dev.crx`.
 
 ```sh
-npm build:dev
+npm run build:dev
 ```
 
 ## How to install from source
