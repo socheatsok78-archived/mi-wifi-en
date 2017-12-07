@@ -8,8 +8,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "postcheckout": "echo 'Post Checkout'",
-    "postmerge": "echo 'Post Merge'",
     "precommit": "npm test",
     "test": "npm run lint",
     "lint": "node_modules/standard/bin/cmd.js src/**/*.js",
